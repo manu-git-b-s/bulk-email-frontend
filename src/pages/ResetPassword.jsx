@@ -27,7 +27,7 @@ const ResetPasswordPage = () => {
     setIsLoading(true);
     try {
       let res = await axios.put(
-        "https://bulk-email-backend-mnvn.onrender.com/api/users/reset-password",
+        "http://3.86.235.191/api/users/reset-password",
         {
           ...values,
           email,

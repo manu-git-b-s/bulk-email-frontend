@@ -36,7 +36,7 @@ const LoginPage = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        "https://bulk-email-backend-mnvn.onrender.com/api/users/login",
+        "http://3.86.235.191/api/users/login",
         values
       );
       if (res.status === 200) {

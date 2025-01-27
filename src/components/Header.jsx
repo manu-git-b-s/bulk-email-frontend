@@ -14,7 +14,7 @@ const Header = () => {
   const logoutHandler = async () => {
     try {
       const res = await axios.post(
-        "https://bulk-email-backend-mnvn.onrender.com/api/users/logout"
+        "http://3.86.235.191/api/users/logout"
       );
       if (res.status === 200) {
         dispatch(logout());

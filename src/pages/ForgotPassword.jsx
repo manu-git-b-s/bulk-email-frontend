@@ -24,7 +24,7 @@ const ForgotPasswordPage = () => {
     const btn = document.getElementById("sendEmailBtn");
     try {
       let res = await axios.post(
-        "https://bulk-email-backend-mnvn.onrender.com/api/users/forgot-password",
+        "http://3.86.235.191/api/users/forgot-password",
         values
       );
       if (res.status === 201) {

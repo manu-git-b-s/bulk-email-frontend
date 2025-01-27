@@ -14,7 +14,7 @@ const MonthlyMails = () => {
     const fetchData = async () => {
       setIsLoading(true);
       let res = await axios.post(
-        "https://bulk-email-backend-mnvn.onrender.com/api/mail/monthly-mails",
+        "http://3.86.235.191/api/mail/monthly-mails",
         {
           email: userInfo.email,
         }

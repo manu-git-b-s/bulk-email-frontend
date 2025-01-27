@@ -31,7 +31,7 @@ const RegisterPage = () => {
     try {
       setIsLoading(true);
       let res = await axios.post(
-        "https://bulk-email-backend-mnvn.onrender.com/api/users/register",
+        "http://3.86.235.191/api/users/register",
         values
       );
       if (res.status === 201) {

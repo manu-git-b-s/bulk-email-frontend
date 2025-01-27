@@ -26,7 +26,7 @@ const SendEmailPage = () => {
     try {
       setIsLoading(true);
       const res = await axios.post(
-        "https://bulk-email-backend-mnvn.onrender.com/api/mail/send-mail",
+        "http://3.86.235.191/api/mail/send-mail",
         { ...values, email: userInfo.email }
       );
       if (res.status === 201) {
